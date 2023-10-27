@@ -1,0 +1,12 @@
+For Authentication use Breeze
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+
+Create Products
+php artisan make:model Product -m    
+
+Run migrations
+php artisan migrate  
+
+php artisan make:controller ProductController --model=Product --requests --resource
